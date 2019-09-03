@@ -1,5 +1,10 @@
 /* General Page Styles */
 
+/* Fix for Mobile Devices width */
+html, body{
+  overflow-x: hidden;
+  }
+
 body {
   font-size: 1em;
   background-color: #222;

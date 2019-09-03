@@ -20,6 +20,7 @@ export default class App extends React.Component {
   return (
     <React.Fragment>
     <Router >
+    <Nav/>
       {/* Call location element so CSSTranstion renders transition between pages properly */}
       <Route render={({location}) =>(
          <TransitionGroup>
@@ -39,7 +40,7 @@ export default class App extends React.Component {
          </CSSTransition>
          </TransitionGroup>
       )} />
-      <Nav/>
+     
     </Router>
     
      </React.Fragment>
