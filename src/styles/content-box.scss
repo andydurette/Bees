@@ -1,0 +1,67 @@
+/* Content Box styles to adjust with flexbox position from mobile */
+
+.content-box {
+  padding: 1.5em 4.25em;
+  border-bottom: 1px solid #cfcfcf; 
+  box-sizing: border-box;
+  .content-box-flex {
+    margin: 8px 0;
+    max-width:1080px;
+    margin:0 auto;
+     a{
+      float:none;
+      display:block;
+      text-align: left;
+      padding:0;
+    }
+  }
+}
+
+.content-box:nth-of-type(odd){
+  background-color:#AC843E;
+  background-image:url("/img/backgrounds/hex-grid-brown.png");
+}
+
+.content-box:nth-of-type(even){
+  background-color:#FFF;
+  color:black;
+}
+
+@media screen and (max-width: 768px) { 
+  .right{
+    height: auto!important;
+    margin:5px 0;
+  }
+
+  .content-box-flex img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .content-box .content-box-flex{
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    align-items: center;
+  }
+
+ .content-box:nth-of-type(even){
+   //Reposition image and text content based on given flex order
+    .right{
+      order: 1; 
+    }
+    .left{
+      order: 0; 
+     }
+    img{
+      padding-left:60px;
+     }
+ }
+
+ .content-box:nth-of-type(odd) img{
+    padding-right:60px;
+ }
+}

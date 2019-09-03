@@ -1,0 +1,68 @@
+/* Page Headings backgroun image src */
+
+#wbm{
+  background-image: url("/img/banners/wbm-banner.jpg");
+}
+
+#hob{
+  background-image: url("/img/banners/home-banner.jpg");
+}
+
+#sid{
+  background-image: url("/img/banners/sid-banner.jpg");
+}
+
+#sor{
+  background-image: url("/img/banners/source-banner.jpg");
+}
+
+/* Page Headings*/
+
+.page-heading{
+  background-repeat: no-repeat, repeat;
+  background-position: right;
+  background-size:cover;
+  min-height:250px;
+  position: relative;
+  padding-left: 4.25em;
+  overflow:hidden;
+  h1{
+    margin-bottom:0;
+    max-width: 50%;
+    font-size:1.75em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    padding: 16px 0; 
+    margin:0;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 16px 0; 
+    margin:0;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .page-heading h1 {
+    font-size: 2em;
+    width:40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-heading{
+    padding-left: 4.25em; }
+}
+
+@media screen and (max-width: 650px) {
+  .page-heading{
+    background-color:#050508;
+    background-position:65% 100%;
+    h1{
+      left: 5%;
+    }
+  }
+}

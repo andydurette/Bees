@@ -1,0 +1,9 @@
+/* Scss variables */
+$color-honey-gold: #fcb040;
+
+/* Importing css organized by section */
+@import 'router-transition.scss';
+@import 'general-styles.scss';
+@import 'navigation.scss';
+@import 'page-headings';
+@import 'content-box.scss';
