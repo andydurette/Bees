@@ -20,6 +20,7 @@ export default class App extends React.Component {
   return (
     <React.Fragment>
     <Router >
+      {/* Nav added here to not be reloaded by page routing */}
     <Nav/>
       {/* Call location element so CSSTranstion renders transition between pages properly */}
       <Route render={({location}) =>(
