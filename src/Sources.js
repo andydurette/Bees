@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 export default class Sources extends React.Component {
 render(){
@@ -37,7 +36,6 @@ return(
             </div>
          </div>
       </section>
-      <Footer/>
    </section>
 </React.Fragment>
 )

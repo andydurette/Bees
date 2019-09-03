@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 export default class HistoryOfBees extends React.Component {
 render(){
@@ -78,7 +77,6 @@ render(){
           </div>
           {/*content-box 3 End*/}
         </section>
-        <Footer/>
     </section>
   </React.Fragment>
   )

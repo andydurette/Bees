@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 export default class SpeciesInDanger extends React.Component {
 render(){
@@ -68,7 +67,6 @@ return(
          </div>
          {/*content-box 3 End*/}
       </section>
-      <Footer/>
    </section>
 </React.Fragment>
 )

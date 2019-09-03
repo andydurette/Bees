@@ -11,17 +11,44 @@ import {
   CSSTransition,
 } from 'react-transition-group';
 import Nav from './Nav';
+import Footer from './Footer';
 
 
 
 export default class App extends React.Component {
 
+  /* Function to control weather the mobile menu is open or not. */
+  constructor(props){
+    super(props)
+    this.state={
+      /* State to control weather the mobile menu is open or not. */
+      menuActive: false
+      }
+    }
+
+    menuUpdate = () => {
+      if (this.state.menuActive === false ){
+        this.setState({ menuActive: true})
+        }else{
+        this.setState({ menuActive: false});
+        }
+      }
+      
+    /* Function closes mobile menu and resets window position back to the top */
+    toTop = () => {
+      window.scrollTo(0, 0);
+      this.setState({ menuActive: false});
+    }
+
+    
+    
+
   render(){
   return (
     <React.Fragment>
-    <Router >
+    <Router>
       {/* Nav added here to not be reloaded by page routing */}
-    <Nav/>
+    <Nav className={(this.state.menuActive === false ) ? "topnav" : "topnav mobile-menu"}  toTop={this.toTop} menuUpdate={this.menuUpdate} />
       {/* Call location element so CSSTranstion renders transition between pages properly */}
       <Route render={({location}) =>(
          <TransitionGroup>
@@ -41,10 +68,10 @@ export default class App extends React.Component {
          </CSSTransition>
          </TransitionGroup>
       )} />
-     
+      {/* Footed added here to not be reloaded by page routing */}
+    <Footer className={(this.state.menuActive === false ) ? "topnav" : "topnav mobile-menu"}  toTop={this.toTop} menuUpdate={this.menuUpdate} /> 
     </Router>
-    
-     </React.Fragment>
+    </React.Fragment>
   );
 }
 }
