@@ -7,7 +7,7 @@ return(
    {/* Section tag exists as wrapper for React Router Transition */}
    <section>
       <div className="page-heading" id="sor">
-         <h1>The sources of these unbeelievable facts.</h1>
+         <h1>The Sources of these Unbeelievable Facts.</h1>
       </div>
       <section>
          <div className="content-box">

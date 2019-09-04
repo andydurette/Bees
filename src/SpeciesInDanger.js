@@ -7,7 +7,7 @@ return(
    {/* Section tag exists as wrapper for React Router Transition */}
    <section>
       <div className="page-heading" id="sid">
-         <h1>A threat to them is one to us as&nbsp;well.</h1>
+         <h1>A Threat to Bees is One to us as&nbsp;Well.</h1>
       </div>
       {/*content-box 1*/}
       <section>
@@ -55,7 +55,7 @@ return(
                   <img src="/img/mite.png" alt="Varroa mite" />
                </div>
                <div className="left">
-                  <h2>Invasive species</h2>
+                  <h2>Invasive Species</h2>
                   <p>
                     The Varroa mite has spread to and become a major pest of honey bees since their introduction into Florida in the mid 1980's. They were first reported in the Bluegrass Region of the Commonwealth in 1991 and now occur throughout the state. 
                   </p>

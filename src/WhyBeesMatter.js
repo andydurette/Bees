@@ -7,7 +7,7 @@ render(){
     {/* Section tag exists as wrapper for React Router Transition */}
     <section>
         <div className="page-heading" id="wbm">
-          <h1>Ways bees enrich our&nbsp;world.</h1>
+          <h1>Ways Bees Enrich our&nbsp;World.</h1>
         </div>
         <section>
           {/* content-box 1 */}

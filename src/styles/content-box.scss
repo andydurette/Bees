@@ -19,7 +19,7 @@
 
 .content-box:nth-of-type(odd){
   background-color:#987437;
-  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to bottom, #987437, #634b23);
+  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to bottom, #987437, #6e5427);
 }
 
 .content-box:nth-of-type(even){
@@ -29,7 +29,7 @@
 
 .content-box:nth-of-type(3n){
   background-color:#987437;
-  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to top, #987437, #634b23);
+  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to top, #987437, #6e5427);
 }
 
 @media screen and (max-width: 768px) { 
