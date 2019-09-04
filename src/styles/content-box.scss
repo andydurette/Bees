@@ -4,8 +4,9 @@
   padding: 1.5em 3em;
   border-bottom: 1px solid #cfcfcf; 
   box-sizing: border-box;
+  align-items:center;
+  display:flex;
   .content-box-flex {
-    margin: 8px 0;
     max-width:1200px;
     margin:0 auto;
      a{
@@ -49,6 +50,11 @@
 @media screen and (min-width: 769px) {
   .content-box {
     padding: 1.5em 4.25em;
+    min-height:50vh;
+  }
+
+  .content-box.sources .right {
+    margin-right:5vw;
   }
 
   .content-box .content-box-flex{

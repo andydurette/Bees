@@ -7,7 +7,9 @@ return(
    {/* Section tag exists as wrapper for React Router Transition */}
    <section>
       <div className="page-heading" id="sid">
-         <h1>A Threat to Bees is One to us as&nbsp;Well.</h1>
+         <div className='gradient-layer'>
+            <h1>A Threat to Bees is One to us as&nbsp;Well.</h1>
+         </div>
       </div>
       {/*content-box 1*/}
       <section>

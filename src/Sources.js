@@ -7,10 +7,12 @@ return(
    {/* Section tag exists as wrapper for React Router Transition */}
    <section>
       <div className="page-heading" id="sor">
-         <h1>The Sources of these Unbeelievable Facts.</h1>
+         <div className='gradient-layer'>
+            <h1>The Sources of these Unbeelievable Facts.</h1>
+         </div>
       </div>
       <section>
-         <div className="content-box">
+         <div className="content-box sources">
             <div className="content-box-flex">
                <div className="right">
                   <img src="/img/research.png" alt="Books"/>

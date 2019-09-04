@@ -7,7 +7,9 @@ render(){
     {/* Section tag exists as wrapper for React Router Transition */}
     <section>
         <div className="page-heading" id="hob">
-          <h1>How the Bee, came to&nbsp;Bee.</h1>
+          <div className='gradient-layer'>
+            <h1>How the Bee, came to&nbsp;Bee.</h1>
+          </div>
         </div>
         <section>
           {/*content-box 1*/}
