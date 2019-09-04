@@ -6,7 +6,7 @@
   box-sizing: border-box;
   .content-box-flex {
     margin: 8px 0;
-    max-width:1080px;
+    max-width:1200px;
     margin:0 auto;
      a{
       float:none;
@@ -18,13 +18,18 @@
 }
 
 .content-box:nth-of-type(odd){
-  background-color:#AC843E;
-  background-image:url("/img/backgrounds/hex-grid-brown.png");
+  background-color:#987437;
+  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to bottom, #987437, #634b23);
 }
 
 .content-box:nth-of-type(even){
   background-color:#FFF;
   color:black;
+}
+
+.content-box:nth-of-type(3n){
+  background-color:#987437;
+  background-image:url('/img/backgrounds/hex-grid-dark-brown.png'), linear-gradient(to top, #987437, #634b23);
 }
 
 @media screen and (max-width: 768px) { 
