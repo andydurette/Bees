@@ -13,8 +13,6 @@ import {
 import Nav from './Nav';
 import Footer from './Footer';
 
-
-
 export default class App extends React.Component {
 
   /* Function to control weather the mobile menu is open or not. */

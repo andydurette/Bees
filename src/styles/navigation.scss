@@ -29,6 +29,7 @@ nav {
 }
 
 
+
 @media screen and (min-width: 651px) {
   nav div{
     float:right;
@@ -36,16 +37,41 @@ nav {
   }
 }
 
+
+
+nav button:focus, nav div a:focus {
+  outline-color: $color-honey-gold;
+  outline-width:1px;
+  outline-style: solid;
+}
+
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+
 //Mobile navigation
 @media screen and (max-width: 650px) {
   nav a {display: none;}
-  nav div.icon {
+  nav button.icon {
     float: right;
     display: block;
     margin-right: 15px;
     cursor:pointer;
+    border: 0;
+    background-color: TRANSPARENT;
+    color: WHITE;
+    padding-bottom:12px;
   }
-  nav div.icon:hover{
+  nav button.icon:hover{
+    color: $color-honey-gold;
+  }
+  nav button:focus{
     color: $color-honey-gold;
   }
   nav.mobile-menu {position: fixed;}
@@ -62,4 +88,60 @@ nav {
   nav.mobile-menu a:first-of-type{
     margin-top:53px;
   }
+}
+
+// SVG menu
+.svg-menu-toggle {
+
+	fill:#fff;
+	pointer-events:all; //needs to be there so the hover works
+	cursor:pointer;
+
+	.bar {
+		-webkit-transform:rotate(0) translateY(0) translateX(0);
+		transform:rotate(0) translateY(0) translateX(0);
+		opacity:1;
+		-webkit-transform-origin: 20px 10px;
+		transform-origin: 20px 10px;
+		-webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+	    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .bar:nth-of-type(1) {
+    -webkit-transform-origin: 20px 10px;
+		transform-origin: 20px 10px;
+  }
+
+   .bar:nth-of-type(3) {
+    -webkit-transform-origin: 20px 20px;
+		transform-origin: 20px 20px;
+   }
+}
+
+.topnav button:hover .svg-menu-toggle, .topnav button:focus .svg-menu-toggle {
+  fill:$color-honey-gold;
+}
+
+
+.topnav.mobile-menu .svg-menu-toggle {
+
+    fill:$color-honey-gold;
+  
+    .bar:nth-of-type(1) {
+		-webkit-transform:rotate(-45deg) translateY(0) translateX(0);
+		transform:rotate(-45deg) translateY(0) translateX(0);
+    }
+
+    .bar:nth-of-type(2) {
+		opacity:0;
+    }
+
+    .bar:nth-of-type(3) {
+    -webkit-transform:rotate(45deg) translateY(0em) translateX(0em);
+		transform:rotate(45deg) translateY(0em) translateX(0em);
+    }
+}
+.inline-svg {
+  display:block;
+  margin:0 auto;
 }
