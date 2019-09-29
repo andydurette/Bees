@@ -4,7 +4,7 @@ This is a website about Bee's using React and React Router.
 
 Live Link: https://bees-react.netlify.com/
 
-![markdown-image](public\img\markdown-image.png)
+![markdown-image](public/img/markdown-image.png)
 
 
 
