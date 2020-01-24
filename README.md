@@ -1,6 +1,6 @@
 # Bee site built with react
 
-This is a website about Bee's using React and React Router.
+This is a website about Bee's using utilizing React and React Router to better hone my react skills.
 
 Live Link: https://bees-react.netlify.com/
 
